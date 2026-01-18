@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Tradutor</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tradutor LS</h1>
+    </header>
+    <main>
+      <div>
+        <textarea name="texto-original" class="texto-original" id="txt-traduzir" placeholder="Digite o texto para traduzir..."></textarea>
+        
+      </div>
+      <div class="seletores">
+        <div class="sel">
+        <h5>Idioma Nativo</h5>
+        <select name="" id="" class="idiomaOriginal">
+            <option value="pt-BR">Português</option>
+            <option value="en">IngLês</option>
+            <option value="de-DE">Alemão</option>
+            <option value="es">Espanhol</option>
+        </select>
+         <h5>Idioma Alvo</h5>
+        <select name="" id="" class="idiomaAlvo">
+            <option value="en">Inglês</option>
+            <option value="pt-BR">Português</option>
+            <option value="de-DE">Alemão</option>
+            <option value="es">Espanhol</option>
+        </select>
+        </div>
+        <button class="bt-traduzir" onclick="lerTexto()" ><img src="/img/tradutor.png" alt="" /></button>
+        <button class="bt-ouvir" onclick="ouvir()""><img src="/img/mic.png" alt="" ></button>
+      </div>
+      <h3>Sua tradução:</h3>
+      <div>
+        <textarea name="texto-traduzido" id="txt-traduzido" class="traducao"></textarea>
+      </div>
+    </main>
+  </body>
+</html>
